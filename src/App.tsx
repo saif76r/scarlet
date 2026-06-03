@@ -468,7 +468,7 @@ export default function App() {
             {!currentUser ? (
               <div className="text-center py-16 bg-[#121216]/50 border border-white/10 backdrop-blur-md rounded-2xl max-w-lg mx-auto p-8 shadow-2xl relative overflow-hidden">
                 <Bookmark className="w-12 h-12 text-[#ff3e3e]/80 mx-auto mb-4 animate-bounce" />
-                <h2 className="text-xl font-display font-black text-white">Join the Scarlet Bingo Otaku Club</h2>
+                <h2 className="text-xl font-display font-black text-white">Join the Scarlet Sigma Otaku Club</h2>
                 <p className="text-xs text-zinc-400 max-w-sm mx-auto mt-2 leading-relaxed">
                   Sign up for an account to bookmark, track your active stream durations, customize subtitles, and persist your watchlist values.
                 </p>
@@ -716,12 +716,12 @@ export default function App() {
             <div className="w-6 h-6 rounded-full overflow-hidden border border-white/20">
               <img 
                 src={logoImage} 
-                alt="Scarlet Bingo Logo" 
+                alt="Scarlet Sigma Logo" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
             </div>
-            <span className="font-display font-black text-white tracking-widest text-sm">SCARLET BINGO</span>
+            <span className="font-display font-black text-white tracking-widest text-sm">SCARLET SIGMA</span>
             <span className="text-[10px] font-mono bg-[#ff3e3e]/15 border border-[#ff3e3e]/25 rounded px-1.5 py-0.5 font-bold text-[#ff3e3e]">2026 EDITION</span>
           </div>
           <p className="leading-relaxed text-zinc-350">

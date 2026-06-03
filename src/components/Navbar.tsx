@@ -36,7 +36,7 @@ export default function Navbar({
             <div className="relative w-9 h-9 sm:w-11 sm:h-11 rounded-full overflow-hidden border border-white/20 shadow-md shadow-black/40 group-hover:border-[#ff3e3e]/50 group-hover:scale-105 active:scale-95 transition-all duration-300">
               <img 
                 src={logoImage} 
-                alt="Scarlet Bingo Logo" 
+                alt="Scarlet Sigma Logo" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />

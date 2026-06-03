@@ -220,7 +220,7 @@ export default function LoginModal({
             <div className="w-8 h-8 rounded-full overflow-hidden border border-white/20 flex items-center justify-center">
               <img 
                 src={logoImage} 
-                alt="Scarlet Bingo Logo" 
+                alt="Scarlet Sigma Logo" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
