@@ -186,7 +186,7 @@ export default function AnimeDetail({
               <span className="font-semibold text-[#ff3e3e] uppercase text-[10px] tracking-widest flex items-center gap-1">
                 <BookOpen className="w-3.5 h-3.5" /> SPEC SHEET
               </span>
-              <span className="font-mono text-[9px] text-zinc-500">SCARLET BINGO</span>
+              <span className="font-mono text-[9px] text-zinc-500">SCARLET SIGMA</span>
             </div>
             
             <div className="flex justify-between">

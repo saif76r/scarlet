@@ -225,7 +225,7 @@ export default function LoginModal({
                 referrerPolicy="no-referrer"
               />
             </div>
-            <span className="font-display font-medium text-white text-lg tracking-tighter uppercase">SCARLET BINGO</span>
+            <span className="font-display font-medium text-white text-lg tracking-tighter uppercase">SCARLET SIGMA</span>
           </div>
           <p className="text-center text-xs text-zinc-300 opacity-85 px-4">
             Sign in to access premium Japanese anime episodes and local watch-history trackers.

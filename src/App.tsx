@@ -431,7 +431,7 @@ export default function App() {
       {/* Dynamic Ambient Background Mesh */}
       <div className="mesh-bg" />
       
-      {/* Scarlet Bingo Premium Header */}
+      {/* Scarlet Sigma Premium Header */}
       <Navbar
         currentUser={currentUser}
         currentTab={currentTab}
@@ -725,7 +725,7 @@ export default function App() {
             <span className="text-[10px] font-mono bg-[#ff3e3e]/15 border border-[#ff3e3e]/25 rounded px-1.5 py-0.5 font-bold text-[#ff3e3e]">2026 EDITION</span>
           </div>
           <p className="leading-relaxed text-zinc-350">
-            Stream Youur Anime Movies with Scarlet Bingo's Premium Catalog. All rights reserved. &copy; 2026 Scarlet Bingo Inc.
+            Stream Youur Anime Movies with Scarlet Sigma's Premium Catalog. All rights reserved. &copy; 2026 Scarlet Sigma Inc.
           </p>
           <div className="flex gap-4 font-mono text-[10px] text-[#ff3e3e]/80">
             <span>SHADOW SECURE PROTOCOLS</span>

@@ -563,7 +563,7 @@ export default function AdminDashboard({
     } else {
       englishTrackCues = [
         { id: 'c1', startTime: 1, endTime: 6, text: `[Subtitle Test] Watching ${episodeForm.title} ep. ${episodeForm.episodeNumber}!` },
-        { id: 'c2', startTime: 8, endTime: 15, text: "Excellent quality. Powered by Scarlet Bingo player custom configurations." },
+        { id: 'c2', startTime: 8, endTime: 15, text: "Excellent quality. Powered by Scarlet Sigma player custom configurations." },
         { id: 'c3', startTime: 17, endTime: 24, text: "You can customize subtitle text size, positions, and color overlays on the settings cog!" }
       ];
     }
@@ -743,7 +743,7 @@ export default function AdminDashboard({
         <div>
           <h1 className="text-3xl font-display font-black text-white tracking-tight flex items-center gap-2">
             <Settings2 className="w-8 h-8 text-[#ff3e3e] animate-pulse" />
-            <span>Scarlet Bingo <span className="text-[#ff3e3e] font-light">Command Center</span></span>
+            <span>Scarlet Sigma <span className="text-[#ff3e3e] font-light">Command Center</span></span>
           </h1>
           <p className="text-sm text-zinc-350 mt-1">
             Superuser platform to manage metadata files, upload video episodes, and audit active customer registrations.
@@ -1764,7 +1764,7 @@ export default function AdminDashboard({
                       rows={6}
                       value={episodeForm.srtSubtitles}
                       onChange={e => setEpisodeForm({...episodeForm, srtSubtitles: e.target.value})}
-                      placeholder={`1\n00:00:01,000 --> 00:00:06,500\n[Example] Welcome to Part 1 of this cinematic film!\n\n2\n00:00:08,200 --> 00:00:15,000\nKeep streaming on Scarlet Bingo with synchronized real-time controls.`}
+                      placeholder={`1\n00:00:01,000 --> 00:00:06,500\n[Example] Welcome to Part 1 of this cinematic film!\n\n2\n00:00:08,200 --> 00:00:15,000\nKeep streaming on Scarlet Sigma with synchronized real-time controls.`}
                       className="bg-[#18181b] border border-[#27272a] rounded-lg px-3 py-2.5 text-xs text-zinc-200 font-mono placeholder:text-zinc-600 focus:border-[#ff3e3e]/40 focus:ring-1 focus:ring-[#ff3e3e]/25 outline-none transition-all resize-y"
                     />
                     <p className="text-[10px] text-zinc-500 italic leading-relaxed">
@@ -1774,7 +1774,7 @@ export default function AdminDashboard({
                 </div>
 
                 <div className="text-rose-500/80 bg-rose-955/20 border border-rose-900/45 text-[11px] p-2.5 rounded-lg mt-4 font-mono leading-relaxed">
-                  <strong>PRO-TIP ON SUBTITLES:</strong> Upon submission, Scarlet Bingo automatically configures multi-lingual testing tracks (English and 日本語 Japanese) that synchronize subtitles during playback immediately!
+                  <strong>PRO-TIP ON SUBTITLES:</strong> Upon submission, Scarlet Sigma automatically configures multi-lingual testing tracks (English and 日本語 Japanese) that synchronize subtitles during playback immediately!
                 </div>
 
                 <div className="flex justify-end gap-3 mt-6 border-t border-zinc-900 pt-4">
@@ -1817,7 +1817,7 @@ export default function AdminDashboard({
               <span>User Accounts Directory</span>
             </h3>
             <p className="text-xs text-zinc-450 mt-1">
-              Active registered users on Scarlet Bingo. You can toggle administrator role permissions or delete accounts from the storage block.
+              Active registered users on Scarlet Sigma. You can toggle administrator role permissions or delete accounts from the storage block.
             </p>
           </div>
 
