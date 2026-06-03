@@ -43,7 +43,7 @@ export default function Navbar({
             </div>
             <div className="flex flex-col">
               <span className="font-display text-sm sm:text-base md:text-lg font-bold tracking-tighter text-white flex items-center gap-1 leading-none uppercase select-none">
-                SCARLET <span className="text-[#ff3e3e] font-extrabold text-[9px] sm:text-[10px] px-1 sm:px-1.5 py-0.5 bg-white/5 border border-white/15 rounded">BINGO</span>
+                SCARLET <span className="text-[#ff3e3e] font-extrabold text-[9px] sm:text-[10px] px-1 sm:px-1.5 py-0.5 bg-white/5 border border-white/15 rounded">SIGMA</span>
               </span>
               <span className="text-[8px] sm:text-[9px] font-mono text-zinc-400 tracking-widest uppercase select-none">OTAKU FLOW</span>
             </div>
