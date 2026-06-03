@@ -1,0 +1,6 @@
+{
+  "name": "Scarlet Bingo",
+  "description": "A premium anime streaming library where fans can watch their favorite series, customize subtitles, and track their watch history.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

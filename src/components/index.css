@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-scarlet-50: #fff1f2;
+  --color-scarlet-100: #ffe4e6;
+  --color-scarlet-200: #fecdd3;
+  --color-scarlet-300: #fda4af;
+  --color-scarlet-400: #fb7185;
+  --color-scarlet-500: #ff3e3e;
+  --color-scarlet-600: #e11d48;
+  --color-scarlet-700: #be123c;
+  --color-scarlet-800: #9f1239;
+  --color-scarlet-950: #4c0519;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  backdrop-filter: blur(4px);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 62, 62, 0.4);
+}
+
+html, body, #root {
+  background-color: #050505;
+  color: #ffffff;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+}
+
+/* Frosted Glass Utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.04) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.mesh-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at 0% 0%, #2a0a0a 0%, transparent 50%),
+              radial-gradient(circle at 100% 100%, #1a0505 0%, transparent 50%),
+              radial-gradient(circle at 50% 50%, #0c0505 0%, #030303 100%);
+  pointer-events: none;
+}
+
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  background: rgba(255, 62, 62, 0.08) !important;
+  border-color: rgba(255, 62, 62, 0.25) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(255, 62, 62, 0.15);
+}
+

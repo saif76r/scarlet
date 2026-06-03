@@ -1,0 +1,85 @@
+{
+  "entities": {
+    "Anime": {
+      "title": "Anime",
+      "description": "An anime title with metadata and nested list of episodes",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "coverUrl": { "type": "string" },
+        "bannerUrl": { "type": "string" },
+        "logoUrl": { "type": "string" },
+        "genres": { "type": "array" },
+        "rating": { "type": "string" },
+        "totalEpisodes": { "type": "number" },
+        "releaseYear": { "type": "number" },
+        "studio": { "type": "string" },
+        "featured": { "type": "boolean" },
+        "episodes": { "type": "array" }
+      },
+      "required": ["id", "title", "description", "coverUrl", "bannerUrl", "genres", "rating", "totalEpisodes", "releaseYear", "studio"]
+    },
+    "UserAccount": {
+      "title": "UserAccount",
+      "description": "User profile with role details",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "email": { "type": "string" },
+        "username": { "type": "string" },
+        "role": { "type": "string", "enum": ["admin", "user"] },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "email", "username", "role", "createdAt"]
+    },
+    "WatchHistoryItem": {
+      "title": "WatchHistoryItem",
+      "description": "Represents the user's progress on an individual episode",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "animeId": { "type": "string" },
+        "episodeId": { "type": "string" },
+        "watchedAt": { "type": "string" },
+        "progressSeconds": { "type": "number" },
+        "durationSeconds": { "type": "number" },
+        "completed": { "type": "boolean" }
+      },
+      "required": ["id", "userId", "animeId", "episodeId", "watchedAt", "progressSeconds", "durationSeconds", "completed"]
+    },
+    "CustomSubtitle": {
+      "title": "CustomSubtitle",
+      "description": "Cloud-stored custom subtitle track uploaded by an admin",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "episodeId": { "type": "string" },
+        "label": { "type": "string" },
+        "srclang": { "type": "string" },
+        "cues": { "type": "array" }
+      },
+      "required": ["id", "episodeId", "label", "srclang", "cues"]
+    }
+  },
+  "firestore": {
+    "/anime/{animeId}": {
+      "schema": "Anime",
+      "description": "Curated database of anime titles"
+    },
+    "/users/{userId}": {
+      "schema": "UserAccount",
+      "description": "User profile accounts"
+    },
+    "/history/{historyId}": {
+      "schema": "WatchHistoryItem",
+      "description": "User watch progress log items"
+    },
+    "/customSubtitles/{subtitleId}": {
+      "schema": "CustomSubtitle",
+      "description": "Admin-uploaded custom subtitle tracks"
+    }
+  }
+}
