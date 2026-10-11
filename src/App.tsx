@@ -3,6 +3,7 @@ import {
   Play, Library, ShieldAlert, Sparkles, Tv, Flame, Clapperboard, 
   Search, Plus, LogIn, Heart, Film, ArrowRight, CheckCircle2, Bookmark
 } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 import { INITIAL_USERS, INITIAL_ANIME_DATA, isEmailAdmin } from './initialData';
 import { Anime, UserAccount, Episode } from './types';
 import Navbar from './components/Navbar';
@@ -746,6 +747,9 @@ export default function App() {
           }}
         />
       )}
+      
+      {/* VERCEL WEB ANALYTICS */}
+      <Analytics />
     </div>
   );
 }
